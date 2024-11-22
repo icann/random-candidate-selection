@@ -64,7 +64,7 @@ C_info = []
 for C_str in candidate_lines:
   C_hex = hexify(C_str)
   if run_including_selection:
-    C_with_D_str = C_str + D_str
+    C_with_D_str = C_str + "/" + D_str
     C_with_D_hex = hexify(C_with_D_str)
     C_with_D_hash = hashlib.sha256(C_with_D_hex.encode("utf-8"))
     C_info.append([C_str, C_hex, C_with_D_str, C_with_D_hex, \
