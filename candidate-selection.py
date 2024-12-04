@@ -56,9 +56,9 @@ if run_including_selection:
     exit(f"The first line of the selection file, '{S_str}', " + \
       "is not an integer. Exiting.")
   else:
-  	if not S > 0:
-			exit(f"The first line of the selection file, '{S_str}', " + \
-				"is not an integer greater than 0. Exiting.")
+    if not S > 0:
+      exit(f"The first line of the selection file, '{S_str}', " + \
+        "is not an integer greater than 0. Exiting.")
   # D_str is the string for D, D_hex is the hex version for display
   D_str = selection_lines[1]
   D_hex = hexify(D_str)
